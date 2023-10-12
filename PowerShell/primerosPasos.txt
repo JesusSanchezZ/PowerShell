@@ -1,0 +1,29 @@
+Visualizar la version de power Shell con la variable;
+	$psversiontable
+
+Comando; Get-Service
+	muestra el estatus de los servicios.
+
+Política actual de power shell;
+	get-executionpolicy
+
+Cambio de la politica de ejecución de scripts;
+	set-executionpolicy RemoteSigned        -- cambia la política mostrando cuadro de confirmación.
+	set-executionpolicy remotesigned -force -- Fuerza el cambio.
+	set-executionpolicy remotesigned -WhatIf -- Muestra información de lo que se va a cambiar.
+
+
+** Características de seguridad de power shell.
+
+Get-Command  -- optiene los comandos y funciones del sistema.
+
+para filtrar los resultados por nombre;
+	Get-Command -name "*service*"       -- * * wildcard
+Uso de pipes;
+	Get-Command -name "*service*" | Select -First 5
+
+Obtener ayuda de un comando;
+	get-help "comando"  -- get-help get-service
+Ayuda detallada del comando;
+	get-help get-service -full
+

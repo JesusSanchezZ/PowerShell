@@ -1,0 +1,7 @@
+Line1 This is Random File
+Line2 : A random statement
+Line3 : A random statement
+Line4 : #Warning: This is a warning
+Line5 : A random statement
+Line6 : #ERROR: Something went wrong here. This is an Error message
+Line7 : A randosm statement
